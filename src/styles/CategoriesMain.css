@@ -4,11 +4,12 @@
     font-weight: 400;
 }
 
-.maindivone{
+.maindivonee{
     display: flex;
+   
 }
 
-.leftpanel{
+.leftttpanel{
     width: 25%;
 
 }
@@ -18,8 +19,8 @@
     
   }
   
-.rightpanel{
-    
+.rightttpanel{
+    width: 75%;
     padding: 0 60px;
 }
 .categories{

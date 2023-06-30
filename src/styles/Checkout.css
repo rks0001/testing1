@@ -1,22 +1,25 @@
 .sctn_main {
   min-height: 80vh;
-  background-color: #f3f3f3;
+  background-color: #ffffff;
+  display: flex;
+  text-align: left;
+}
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.checkoutdivmain{
   display: flex;
 }
 
-.toptxt {
-  padding: 20px 0;
-  font-size: 22px;
-  font-weight: 500;
+.lefttpanel{
+  width: 75%;
+  
 }
 
-.showproducts {
-  width: 60%;
-  padding: 20px 40px;
-}
-
-.payment {
-  width: 30%;
-  padding: 20px 40px;
-  margin: 100px 0;
+.righttpanel{
+  width: 25%;
 }

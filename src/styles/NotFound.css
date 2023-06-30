@@ -1,0 +1,15 @@
+.mainnndiv{
+    min-height: 80vh;
+    padding: 20px 200px;
+    text-align: center;
+}
+
+.notfoundimg{
+    height: 400px;
+    width: 50%;
+}
+
+.notfoundtxt{
+    padding: 10px 0;
+    margin-bottom: 40px;
+}

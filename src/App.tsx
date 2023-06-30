@@ -18,6 +18,10 @@ import AddAddress from "./pages/AddAddress";
 import ShippingPolicy from "./pages/ShippingPolicy";
 import CookiePolicy from "./pages/CookiePolicy";
 import AcceptableUsePolicy from "./pages/AcceptableUsePolicy";
+import AffiliateDisclosure from "./pages/AffiliateDisclosure";
+import Help from "./pages/Help";
+import Contact from "./pages/Contact";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -42,13 +46,20 @@ function App() {
             <Route path="/privacypolicy" element={<PrivacyPolicy />} />
             <Route path="/termsandconditions" element={<TermsandCondition />} />
             <Route path="/refundpolicy" element={<RefundPolicy />} />
-            <Route path="/addadress" element={<AddAddress />} />
+            <Route path="/addaddress" element={<AddAddress />} />
             <Route path="/shippingpolicy" element={<ShippingPolicy />} />
             <Route path="/cookiepolicy" element={<CookiePolicy />} />
             <Route
               path="/acceptableusepolicy"
               element={<AcceptableUsePolicy />}
             />
+            <Route
+              path="/affiliatedisclosure"
+              element={<AffiliateDisclosure />}
+            />
+            <Route path="/help" element={<Help />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/notfound" element={<NotFound />} />
           </Routes>
           <Footer />
         </div>
