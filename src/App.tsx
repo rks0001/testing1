@@ -22,6 +22,7 @@ import AffiliateDisclosure from "./pages/AffiliateDisclosure";
 import Help from "./pages/Help";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import Disclaimer from "./pages/Disclaimer";
 
 function App() {
   return (
@@ -49,6 +50,7 @@ function App() {
             <Route path="/addaddress" element={<AddAddress />} />
             <Route path="/shippingpolicy" element={<ShippingPolicy />} />
             <Route path="/cookiepolicy" element={<CookiePolicy />} />
+            <Route path="/disclaimer" element={<Disclaimer />} />
             <Route
               path="/acceptableusepolicy"
               element={<AcceptableUsePolicy />}
