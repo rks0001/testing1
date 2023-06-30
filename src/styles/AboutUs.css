@@ -1,0 +1,17 @@
+.sectionmain{
+    min-height: 80vh;
+}
+.headdtext{
+    color: #3c5e9f;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+.divmain{
+    padding:  40px 200px;
+    text-align: justify;
+}
+.info{
+    color: #0e0e0e;
+    line-height: 1.6;
+}
