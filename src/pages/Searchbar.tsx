@@ -14,14 +14,17 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
   return (
     <div className="search-bar-main">
       <div className="search-bar-container">
-        <span>Deliver to </span>
-        <input
-          className="search"
-          type="text"
-          placeholder="Search..."
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-        />
+        <span className="deliverto">Deliver to </span>
+        <div>
+          <input
+            className="search"
+            type="text"
+            placeholder="Search..."
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+          />
+        </div>
+
         <button className="searchbtn" onClick={handleSearch}>
           Search
         </button>
