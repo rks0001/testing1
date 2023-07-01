@@ -1,6 +1,6 @@
 import Catcard from "../components/Catcard";
 import { useEffect, useState } from "react";
-import "../styles/Categories.css";
+import "../styles/CategoriesMain.css";
 import Sidebar from "../components/Sidebar";
 
 const Categories = () => {
@@ -48,64 +48,74 @@ const Categories = () => {
   };
 
   return (
-    <div className="maindivonee">
-      <div className="leftttpanel">
-        <Sidebar />
-      </div>
-      <div className="rightttpanel">
-        <div className="mainsection">
-          <div className="headddtext">Shop by Categories :-</div>
-          <div className="categories">
-            <div className="container">
-              {medicineCat?.map((data) => {
-                const filteredProducts = product?.filter(
-                  (item) =>
-                    item.mainProductCategory === data.mainProductCategory
-                );
-                const visibleProducts = filteredProducts?.slice(
-                  0,
-                  numRows[data.mainProductCategory] * productsPerCategory
-                );
+    <div className="mainnsec">
+      <div className="maindivonee">
+        <div className="leftttpanel">
+          <Sidebar />
+        </div>
+        <div className="rightttpanel">
+          <div className="mainsection">
+            <div className="categories">
+              <div className="container">
+                {medicineCat?.map((data) => {
+                  const filteredProducts = product?.filter(
+                    (item) =>
+                      item.mainProductCategory === data.mainProductCategory
+                  );
+                  const visibleProducts = filteredProducts?.slice(
+                    0,
+                    numRows[data.mainProductCategory] * productsPerCategory
+                  );
 
-                return (
-                  <div className="rowmain" key={data._id}>
-                    <div className="procattext">{data.mainProductCategory}</div>
-                    <hr />
-                    {visibleProducts?.length !== 0 ? (
-                      <div className="col-12 mt-3">
-                        <div>
-                          <div className="card-grid">
-                            {visibleProducts.map((filterItems) => (
-                              <div className="card-item" key={filterItems._id}>
-                                <Catcard
-                                  className="catcard"
-                                  productName={filterItems.mainProductCategory}
-                                  subProduct={filterItems.productName}
-                                  imgSrc={filterItems.productImages[0]}
-                                  mrp={filterItems.MRP}
-                                />
-                              </div>
-                            ))}
+                  return (
+                    <div className="rowmain" key={data._id}>
+                      <div className="procattext">
+                        {data.mainProductCategory}
+                      </div>
+                      <hr />
+                      {visibleProducts?.length !== 0 ? (
+                        <div className="col-12 mt-3">
+                          <div>
+                            <div className="card-grid">
+                              {visibleProducts.map((filterItems) => (
+                                <div
+                                  className="card-item"
+                                  key={filterItems._id}
+                                >
+                                  <Catcard
+                                    className="catcard"
+                                    productName={
+                                      filterItems.mainProductCategory
+                                    }
+                                    subProduct={filterItems.productName}
+                                    imgSrc={filterItems.productImages[0]}
+                                    mrp={filterItems.MRP}
+                                  />
+                                </div>
+                              ))}
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    ) : (
-                      <div>No such data found</div>
-                    )}
+                      ) : (
+                        <div>No such data found</div>
+                      )}
 
-                    {filteredProducts?.length >
-                      numRows[data.mainProductCategory] *
-                        productsPerCategory && (
-                      <button
-                        className="seemore"
-                        onClick={() => handleSeeMore(data.mainProductCategory)}
-                      >
-                        See More ...
-                      </button>
-                    )}
-                  </div>
-                );
-              })}
+                      {filteredProducts?.length >
+                        numRows[data.mainProductCategory] *
+                          productsPerCategory && (
+                        <button
+                          className="seemore"
+                          onClick={() =>
+                            handleSeeMore(data.mainProductCategory)
+                          }
+                        >
+                          See More ...
+                        </button>
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
             </div>
           </div>
         </div>

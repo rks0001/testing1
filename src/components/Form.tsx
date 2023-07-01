@@ -140,11 +140,9 @@ const Form = ({ handleClose }) => {
               </Button>
             </div>
             <div>
-              <Link to="/password-reset"
-              >
+              <Link onClick={handleClose} to="/forgot">
                 Forgot Password?
               </Link>
-              {/* {showModal && <ForgotPasswordModal onClose={handleCloseModal} />} */}
             </div>
           </form>
         </Tab>

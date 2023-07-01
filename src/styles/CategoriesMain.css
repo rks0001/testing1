@@ -1,7 +1,7 @@
-.headtext{
-    padding: 6px 80px;
-    font-size: 16px;
-    font-weight: 400;
+.procattext{
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px 0 0 0;
 }
 
 .maindivonee{
@@ -10,7 +10,9 @@
 }
 
 .leftttpanel{
+    padding: 20px 10px;
     width: 25%;
+
 
 }
 .procattext2{
@@ -20,7 +22,7 @@
   }
   
 .rightttpanel{
-    width: 75%;
+  width: 100%;
     padding: 0 60px;
 }
 .categories{
@@ -38,3 +40,15 @@ img{
     width: 100px;
     height: 150px;
 }
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-content: space-evenly;
+  gap: 10px;
+
+    
+  }
+
+  .card-item {
+    width: 100%;
+  }

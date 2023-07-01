@@ -8,11 +8,18 @@ const Catcard = (props: any) => {
   const [qty, setQty] = useState(1);
   const [totalPrice, setTotalPrice] = useState(props.mrp);
 
-  const handleQtyChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    const selectedQty = parseInt(e.target.value);
-    setQty(selectedQty);
-    const newTotalPrice = (props.mrp * selectedQty).toFixed(2);
+  const handleIncrement = () => {
+    setQty((prevQty) => prevQty + 1);
+    const newTotalPrice = (props.mrp * (qty + 1)).toFixed(2);
     setTotalPrice(newTotalPrice);
+  };
+
+  const handleDecrement = () => {
+    if (qty > 1) {
+      setQty((prevQty) => prevQty - 1);
+      const newTotalPrice = (props.mrp * (qty - 1)).toFixed(2);
+      setTotalPrice(newTotalPrice);
+    }
   };
 
   const handleCart = () => {
@@ -46,29 +53,34 @@ const Catcard = (props: any) => {
     <>
       <Card
         className="card mt-3"
-        style={{ width: "15rem", minHeight: "500px" }}
+        style={{ width: "15rem", minHeight: "520px" }}
       >
-        <Card.Img
-          className="cardimg"
-          variant="top"
-          src={props.imgSrc}
-          style={{ height: "200px", objectFit: "fill" }}
-        />
+        <Link to="/productdisplay">
+          <Card.Img
+            className="cardimg"
+            variant="top"
+            src={props.imgSrc}
+            style={{ height: "200px", objectFit: "fill" }}
+          />
+          <Card.Body>
+            <Card.Title>{props.subProduct}</Card.Title>
+            <Card.Text>{props.productName}</Card.Text>
+          </Card.Body>
+        </Link>
+
         <Card.Body>
-          <Card.Title>{props.subProduct}</Card.Title>
-          <Card.Text>{props.productName}</Card.Text>
           <div className="container w-100">
-            <select className="selection rounded" onChange={handleQtyChange}>
-              {Array.from(Array(6), (e, i) => {
-                return (
-                  <option key={i + 1} value={i + 1}>
-                    {i + 1}
-                  </option>
-                );
-              })}
-            </select>
-            <Card.Text>MRP: {props.mrp}</Card.Text>
-            <Card.Text className="d-inline h-100 fs-5">
+            <div className="quantity-counter">
+              <button className="counter-btn" onClick={handleDecrement}>
+                -
+              </button>
+              <div className="counter-value">{qty}</div>
+              <button className="counter-btn" onClick={handleIncrement}>
+                +
+              </button>
+            </div>
+            <Card.Text className="mrptext">MRP: {props.mrp}</Card.Text>
+            <Card.Text className="totalprice">
               Total Price: {totalPrice}
             </Card.Text>
           </div>

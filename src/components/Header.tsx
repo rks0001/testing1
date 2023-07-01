@@ -59,11 +59,12 @@ const Header = () => {
           </div>
           <div className="cart">
             <button className="downloadapp">
-              <Link to="/prescription">Download App</Link>
+              <Link to="/notfound">Download App</Link>
             </button>
           </div>
-          <div className="cart">
+          <div className="cart-icon">
             <FaShoppingCart style={iconStyles} />
+            <span className="cart-count">5</span>
             <span className="icontext">
               {" "}
               <Link to="/checkout">Cart</Link>

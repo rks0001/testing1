@@ -16,7 +16,7 @@ const Checkout = () => {
   return (
     <div className="sctn_main">
       <div className="container">
-        <h2>Order Summary</h2>
+        <div className="ordertxt">Order Summary</div>
         <div className="checkoutdivmain">
           <div className="lefttpanel">
             <div className="cardContainer">

@@ -10,7 +10,11 @@
   justify-content: space-evenly;
   gap: 20px;
 }
-
+.ordertxt{
+  padding: 20px 30px 0 30px;
+  font-size: 24px;
+  font-weight: 600;
+}
 .checkoutdivmain{
   display: flex;
 }
