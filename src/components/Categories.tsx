@@ -8,7 +8,7 @@ const Categories = () => {
 
   const loadData = async () => {
     let response = await fetch(
-      "http://localhost:5000/api/display/productdata",
+      "http://localhost:5090/api/display/productdata",
       {
         method: "POST",
         headers: {

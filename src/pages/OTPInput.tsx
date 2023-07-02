@@ -71,69 +71,72 @@ export default function VerificationPage() {
             <form>
               <div>
                 <div>
-                  <div>
-                    <input
-                      maxLength="1"
-                      type="text"
-                      name=""
-                      id=""
-                      onChange={(e) =>
-                        setOTPinput([
-                          e.target.value,
-                          OTPinput[1],
-                          OTPinput[2],
-                          OTPinput[3],
-                        ])
-                      }
-                    />
-                  </div>
-                  <div>
-                    <input
-                      maxLength="1"
-                      type="text"
-                      name=""
-                      id=""
-                      onChange={(e) =>
-                        setOTPinput([
-                          OTPinput[0],
-                          e.target.value,
-                          OTPinput[2],
-                          OTPinput[3],
-                        ])
-                      }
-                    />
-                  </div>
-                  <div>
-                    <input
-                      maxLength="1"
-                      type="text"
-                      name=""
-                      id=""
-                      onChange={(e) =>
-                        setOTPinput([
-                          OTPinput[0],
-                          OTPinput[1],
-                          e.target.value,
-                          OTPinput[3],
-                        ])
-                      }
-                    />
-                  </div>
-                  <div>
-                    <input
-                      maxLength="1"
-                      type="text"
-                      name=""
-                      id=""
-                      onChange={(e) =>
-                        setOTPinput([
-                          OTPinput[0],
-                          OTPinput[1],
-                          OTPinput[2],
-                          e.target.value,
-                        ])
-                      }
-                    />
+                  <div className="inputcon">
+                    <div className="inputnum">
+                      <input
+                        maxLength="1"
+                        type="text"
+                        name=""
+                        id=""
+                        onChange={(e) =>
+                          setOTPinput([
+                            e.target.value,
+                            OTPinput[1],
+                            OTPinput[2],
+                            OTPinput[3],
+                          ])
+                        }
+                      />
+                    </div>
+
+                    <div className="inputnum">
+                      <input
+                        maxLength="1"
+                        type="text"
+                        name=""
+                        id=""
+                        onChange={(e) =>
+                          setOTPinput([
+                            OTPinput[0],
+                            e.target.value,
+                            OTPinput[2],
+                            OTPinput[3],
+                          ])
+                        }
+                      />
+                    </div>
+                    <div className="inputnum">
+                      <input
+                        maxLength="1"
+                        type="text"
+                        name=""
+                        id=""
+                        onChange={(e) =>
+                          setOTPinput([
+                            OTPinput[0],
+                            OTPinput[1],
+                            e.target.value,
+                            OTPinput[3],
+                          ])
+                        }
+                      />
+                    </div>
+                    <div className="inputnum">
+                      <input
+                        maxLength="1"
+                        type="text"
+                        name=""
+                        id=""
+                        onChange={(e) =>
+                          setOTPinput([
+                            OTPinput[0],
+                            OTPinput[1],
+                            OTPinput[2],
+                            e.target.value,
+                          ])
+                        }
+                      />
+                    </div>
                   </div>
                 </div>
 

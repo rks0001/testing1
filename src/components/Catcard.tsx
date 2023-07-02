@@ -31,7 +31,7 @@ const Catcard = (props: any) => {
       totalPrice: totalPrice,
     };
 
-    fetch("http://localhost:5000/api/cards/addproduct", {
+    fetch("http://localhost:5090/api/cards/addproduct", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

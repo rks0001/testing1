@@ -7,7 +7,7 @@ const CardState = (props) => {
   const [cards, setCards] = useState(CardsInitial);
   // get cards
   const getCards = async () => {
-    let response = await fetch("http://localhost:5000/api/cards/fetchproduct", {
+    let response = await fetch("http://localhost:5090/api/cards/fetchproduct", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -22,7 +22,7 @@ const CardState = (props) => {
 
   const deleteCard = async (id) => {
     const response = await fetch(
-      `http://localhost:5000/api/cards/deleteproduct/${id}`,
+      `http://localhost:5090/api/cards/deleteproduct/${id}`,
       {
         method: "DELETE",
         headers: {

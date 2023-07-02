@@ -49,7 +49,7 @@ const Form = ({ handleClose }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const response = await fetch("http://localhost:5000/api/auth/creatuser", {
+    const response = await fetch("http://localhost:5090/api/auth/creatuser", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -78,7 +78,7 @@ const Form = ({ handleClose }) => {
   const handleLogin = async (e) => {
     e.preventDefault();
 
-    const response = await fetch("http://localhost:5000/api/auth/loginuser", {
+    const response = await fetch("http://localhost:5090/api/auth/loginuser", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

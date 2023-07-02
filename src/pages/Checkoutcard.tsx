@@ -42,7 +42,7 @@ export default Checkoutcard;
 //   const ide = props.id;
 //   try
 //   {
-// const response = await fetch(`http://localhost:5000/api/cards/deleteproduct/${ide}`, {
+// const response = await fetch(`http://localhost:5090/api/cards/deleteproduct/${ide}`, {
 //   method: "DELETE",
 //   headers: {
 //     "Content-Type": "application/json",
