@@ -1,6 +1,7 @@
 .card1{
     border: none;
-    background-color: #f9f9f9;
+    background-color: #ffffff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .cardimg{
     padding: 12px;

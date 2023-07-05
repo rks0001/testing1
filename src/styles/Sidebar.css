@@ -1,14 +1,13 @@
 
 .side-panel {
   height: 100vh;
-
   padding: 20px;
   margin: 10px 0 0 10px;
   border: 2px solid #ffffff;
   border-radius: 10px;
   min-height: 80vh;
   background-color: #ffffff;
-  box-shadow: rgba(255, 255, 255, 0.15) 1.95px 1.95px 2.6px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   overflow: scroll;
 }
 

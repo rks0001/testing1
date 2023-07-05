@@ -57,8 +57,8 @@ const Catcard = (props: any) => {
   return (
     <>
       <Card
-        className="card mt-3"
-        style={{ width: "15rem", minHeight: "520px" }}
+        className="card1 mt-3"
+        style={{ width: "15rem", minHeight: "600px" }}
       >
         <Link to="/productdisplay">
           <Card.Img
