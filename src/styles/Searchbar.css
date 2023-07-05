@@ -1,52 +1,66 @@
-.search-bar-main {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
- 
-    background-image: url('../banner3.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 50vh;
-    
 
-  }
-.deliverto{
-  margin: 0 20px;
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url('../banner3.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 50vh;
 }
-  .search-bar-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #ffffff;
-    padding: 10px 20px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    border-radius: 10px;
-    width: 50%;
+.searchbarcon {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 10px ;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border-radius: 10px;
+  width: 70%;
 
-  }
-  .search{
-    border: none;
-    padding: 10px 20px;
-    width: 100px;
-  }
+}
+input {
+  
+  border: none;
+  outline: none;
+}
 
-  .search:active{
-    border: none;
-    padding: 10px 20px;
-  }
+.pinsearch{
+  border: none;
   
+  width: 20%;
+}
+.pinsearch1{
+  border: none;
   
-  .searchbtn {
-    padding: 6px 20px;
-    border-radius: 5px;
-    background-color: #dfecf9;
-    border: none;
-    border-radius: 6px;
-    color: #11365b;
-    font-size: 16px;
-    font-weight: 500;
-    
-  }
+  outline: none;
+}
+
+.search{
+  border: none;
+  
+  width: 60%;
+  text-decoration: none;
+}
+
+
+
+.searchbtn {
+  padding: 6px 20px;
+  border-radius: 5px;
+  background-color: #dfecf9;
+  border: none;
+  border-radius: 6px;
+  color: #11365b;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.searchbtn:hover {
+  background-color: #c0cfdf;
+}

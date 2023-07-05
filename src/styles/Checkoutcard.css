@@ -6,18 +6,35 @@
   border-radius: 10px;
   height: auto;
 }
+
+.medtag{
+  background-color: rgb(223, 223, 223);
+  font-size: 12px;
+  font-weight: 500;
+  padding: 2px 10px;
+  border: none;
+  border-radius: 10px;
+}
 .deletebtn{
   background-color: rgb(115, 150, 221);
     padding:6px 12px;
     border: none;
     border-radius: 10px;
-    margin: 10px;
+ margin: 10px 0;
     color: aliceblue;
     font-size: 16px;
     font-weight: 400;
-    position: absolute;
-  bottom: 0;
-  left: 0;
+    
+}
+.deletebtn:hover{
+  background-color: rgb(168, 185, 219);
+ 
+    
+}
+.deletebtn2{
+  
+  bottom: 10;
+  left: 30;
 }
 
 .smallimg {

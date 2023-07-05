@@ -1,4 +1,8 @@
-.footermainn {
+/* Big Screen */
+
+@media screen and (min-width: 601px) {
+  
+  .footermainn {
   background-color: #dfecf9;
   min-height: 20vh;
   color: white;
@@ -26,4 +30,42 @@
 .playstoreimg{
   height: 60px;
   width: 50%;
+}
+
+}
+
+/* Small Screen */
+
+@media screen and (max-width: 600px) {
+  
+  .footermainn {
+  background-color: #dfecf9;
+  min-height: 20vh;
+ 
+ 
+}
+
+.mainrow{
+  padding: 30px 0;
+}
+
+.rowwitem{
+  padding: 4px 0;
+  font-size: 14px;
+ 
+}
+
+
+.rowwitemhead{
+  padding: 4px 0;
+  font-size: 16px;
+  font-weight: 600;
+ 
+}
+
+.playstoreimg{
+  height: 60px;
+  width: 50%;
+}
+
 }

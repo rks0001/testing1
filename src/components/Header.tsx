@@ -64,7 +64,7 @@ const Header = () => {
           </div>
           <div className="cart-icon">
             <FaShoppingCart style={iconStyles} />
-            <span className="cart-count">5</span>
+            <span className="cart-count">7</span>
             <span className="icontext">
               {" "}
               <Link to="/checkout">Cart</Link>
@@ -89,43 +89,6 @@ const Header = () => {
           </div>
         </div>
       </nav>
-      {/* <div className="secondheader">
-        <div className="medcareitems">
-          <Link to="/allopathic">Allopathic Medicines</Link>
-        </div>
-        <Link to="/allopathic"></Link>
-        <div className="medcareitems">Ayurvedic Medicines</div>
-        <Link to="/allopathic"></Link>
-        <div className="medcareitems">Generic Medicines</div>
-        <Link to="/allopathic"></Link>
-        <div className="medcareitems">Mom & Baby</div>
-        <Link to="/allopathic"></Link>
-        <div className="medcareitems">Diabetic Care</div>
-        <Link to="/allopathic"></Link>
-        <div className="medcareitems">Pain Relief</div>
-        <Link to="/allopathic"></Link>
-        <div className="medcareitems">Surgical and Dressing Items</div>
-        <Link to="/allopathic"></Link>
-        <div className="medcareitems">Skin Care</div>
-      </div>
-      <div className="thirdheader">
-        <Link to="/allopathic"></Link>
-        <div className="medcareitems">Hair Care</div>
-        <Link to="/allopathic"></Link>
-        <div className="medcareitems">Sexual Wellness</div>
-        <Link to="/allopathic"></Link>
-        <div className="medcareitems">Covid Essentials</div>
-        <Link to="/allopathic"></Link>
-        <div className="medcareitems">Devices </div>
-        <Link to="/allopathic"></Link>
-        <div className="medcareitems">Intimate Care & Hygiene</div>
-        <Link to="/allopathic"></Link>
-        <div className="medcareitems">Home Care</div>
-        <Link to="/allopathic"></Link>
-        <div className="medcareitems">Fitness & Supplements</div>
-        <Link to="/allopathic"></Link>
-        <div className="medcareitems">Mobility and Support</div>
-      </div> */}
     </div>
   );
 };

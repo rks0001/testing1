@@ -32,18 +32,19 @@
   display: block;
   padding: 0 20px;
   margin: 10px 0;
-  color: #263994;
+  color: rgb(115, 150, 221);
   font-weight: 500;
   font-size: 18px;
 }
 
 .proceed {
-  background-color: #263994;
+  background-color: rgb(115, 150, 221);
   color: white;
+  border-radius: 10px;
   border: none;
-  border-radius: 8px;
-  padding: 4px 10px;
-  margin: 4px 0;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 .label {

@@ -1,4 +1,28 @@
-.address-container {
+.addressdiv{
+  background-color:#e7e5e5 ;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 10px;
+  
+}
+.addresstext{
+  font-weight: 600;
+  font-size: 18px;
+}
+.savebtn{
+  background-color: rgb(115, 150, 221);
+  padding:6px 14px;
+  border: none;
+  font-size: 16px;
+  border-radius: 10px;
+  margin: 10px 0;
+  color: aliceblue;
+ text-align: center;
+  font-weight: 400;
+}
+
+
+/* .address-container {
     margin-bottom: 20px;
   }
   
@@ -34,4 +58,4 @@
   button[type="submit"]:hover {
     background-color: #0056b3;
   }
-  
+   */

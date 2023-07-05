@@ -4,6 +4,8 @@ import "../styles/Checkout.css";
 import Payment from "../components/Payment";
 import cardContext from "../context/cards/cardContext";
 
+import AddAddress from "./AddAddress";
+
 const Checkout = () => {
   const context = useContext(cardContext);
 
@@ -16,7 +18,7 @@ const Checkout = () => {
   return (
     <div className="sctn_main">
       <div className="container">
-        <div className="ordertxt">Order Summary</div>
+        <div className="ordertxt">Checkout Cart</div>
         <div className="checkoutdivmain">
           <div className="lefttpanel">
             <div className="cardContainer">
@@ -26,6 +28,8 @@ const Checkout = () => {
             </div>
           </div>
           <div className="righttpanel">
+            <AddAddress />
+
             <Payment />
           </div>
         </div>

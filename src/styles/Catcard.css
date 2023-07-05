@@ -11,26 +11,18 @@
 
 .btnshop{
     background-color: rgb(115, 150, 221);
-    padding:6px 12px;
+    padding:8px 16px;
     border: none;
     border-radius: 10px;
     margin: 0 20px 10px 20px;
     color: aliceblue;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
-    position: absolute;
-  bottom: 0;
-  left: 0;
+    
 }
 .btnshop:hover{
-    background-color: rgb(115, 150, 221);
-    padding:6px 12px;
-    border: none;
-    border-radius: 10px;
-    margin: 0 20px 10px 20px;
-    color: aliceblue;
-    font-size: 16px;
-    font-weight: 400;
+    background-color: rgb(128, 152, 199);
+    
 }
 
 .quantity-counter {
@@ -54,20 +46,35 @@
   }
   
   .totalprice{
-    position: absolute;
-
-  left: 0;
-  padding: 0 20px;
+    
+  padding: 2px 0;
   
     font-size: 20px;
     color: rgb(179, 90, 148);
     font-weight: 500;
   }
-
+.bestpricetext{
+ 
+  padding: 2px 0;
+  font-size: 20px;
+  color: rgb(65, 150, 57);
+  font-weight: 600;
+ 
+  
+}
+.discounttext{
+   
+  padding: 2px 0;
+    font-size: 16px;
+    color: rgb(211, 1, 1);
+    font-weight: 400;
+   
+  }
   .mrptext{
    
-  padding: 10px 0;
+  padding: 10px 0 0 0;
     font-size: 16px;
-    color: rgb(55, 110, 59);
+    color: rgb(107, 107, 107);
     font-weight: 400;
+    text-decoration: line-through;
   }

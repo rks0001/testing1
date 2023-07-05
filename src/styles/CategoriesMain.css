@@ -1,54 +1,114 @@
-.procattext{
-    font-size: 20px;
-    font-weight: 500;
-    padding: 20px 0 0 0;
+/* Big Screen */
+
+@media screen and (min-width: 601px) {
+    .procattext{
+        font-size: 20px;
+        font-weight: 500;
+        padding: 20px 0 0 0;
+    }
+    .mainnsecsmall{
+        display: none;
+    }
+    
+    .maindivonee{
+        display: flex;
+       
+    }
+    
+    .leftttpanel{
+        padding: 20px 10px;
+        width: 25%;
+    
+    
+    }
+    .procattext2{
+        font-size: 14px;
+        font-weight: 500;
+        
+      }
+      
+    .rightttpanel{
+      width: 100%;
+        padding: 0 60px;
+    }
+    .categories{
+        min-height: 80vh;
+        margin-bottom: 60px;
+    }
+    
+    .rowone{
+        padding: 20px 0 ;
+    }
+    .colone{
+        text-align: left;
+    }
+    img{
+        width: 100px;
+        height: 150px;
+    }
+    .card-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        justify-content: space-evenly;
+      gap: 10px;
+    
+        
+      }
+    
+      .card-item {
+        width: 100%;
+      }
 }
 
-.maindivonee{
-    display: flex;
+/* Small Screen */
+
+@media screen and (max-width: 600px) {
+    .procattext{
+        font-size: 20px;
+        font-weight: 500;
+        padding: 20px 0 0 0;
+    }
+    .mainnsecbig{
+        display: none;
+    }
+    
+    .maindivonee{
+        display: flex;
+       
+    }
    
-}
-
-.leftttpanel{
-    padding: 20px 10px;
-    width: 25%;
-
-
-}
-.procattext2{
-    font-size: 14px;
-    font-weight: 500;
+    .procattext2{
+        font-size: 14px;
+        font-weight: 500;
+        
+      }
+      
     
-  }
-  
-.rightttpanel{
-  width: 100%;
-    padding: 0 60px;
-}
-.categories{
-    min-height: 80vh;
-    margin-bottom: 60px;
-}
-
-.rowone{
-    padding: 20px 0 ;
-}
-.colone{
-    text-align: left;
-}
-img{
-    width: 100px;
-    height: 150px;
-}
-.card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    justify-content: space-evenly;
-  gap: 10px;
-
+    .categories{
+        min-height: 80vh;
+        margin-bottom: 60px;
+    }
     
-  }
-
-  .card-item {
-    width: 100%;
-  }
+    .rowone{
+        padding: 20px 0 ;
+    }
+    .colone{
+        text-align: left;
+    }
+    img{
+        width: 100px;
+        height: 150px;
+    }
+    .card-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        justify-content: space-evenly;
+      gap: 10px;
+    
+        
+      }
+    
+      .card-item {
+        width: 100%;
+      }
+}

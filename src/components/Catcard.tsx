@@ -6,18 +6,22 @@ import { Link } from "react-router-dom";
 
 const Catcard = (props: any) => {
   const [qty, setQty] = useState(1);
-  const [totalPrice, setTotalPrice] = useState(props.mrp);
+  const [totalPrice, setTotalPrice] = useState(props.BestPrice);
+
+  const discount = (((props.mrp - props.BestPrice) / props.mrp) * 100).toFixed(
+    2
+  );
 
   const handleIncrement = () => {
     setQty((prevQty) => prevQty + 1);
-    const newTotalPrice = (props.mrp * (qty + 1)).toFixed(2);
+    const newTotalPrice = (props.BestPrice * (qty + 1)).toFixed(2);
     setTotalPrice(newTotalPrice);
   };
 
   const handleDecrement = () => {
     if (qty > 1) {
       setQty((prevQty) => prevQty - 1);
-      const newTotalPrice = (props.mrp * (qty - 1)).toFixed(2);
+      const newTotalPrice = (props.BestPrice * (qty - 1)).toFixed(2);
       setTotalPrice(newTotalPrice);
     }
   };
@@ -27,6 +31,7 @@ const Catcard = (props: any) => {
       imgSrc: props.imgSrc,
       subProduct: props.subProduct,
       productName: props.productName,
+      BestPrice: props.BestPrice,
       qty: qty,
       totalPrice: totalPrice,
     };
@@ -79,13 +84,16 @@ const Catcard = (props: any) => {
                 +
               </button>
             </div>
-            <Card.Text className="mrptext">MRP: {props.mrp}</Card.Text>
+            <p className="mrptext">MRP: {props.mrp}</p>
+            <p className="bestpricetext">Best Price: {props.BestPrice}</p>
+            <p className="discounttext">Discount: {discount}%</p>
             <Card.Text className="totalprice">
               Total Price: {totalPrice}
             </Card.Text>
+            <hr />
           </div>
-          <hr />
-          <button className="btnshop " onClick={handleCart}>
+
+          <button className="btnshop" onClick={handleCart}>
             Add to cart
           </button>
         </Card.Body>
